@@ -28,7 +28,7 @@ In the step `1.` all tests should be executed (`bar.e2e.js`, `tar.e2e.js`, `far.
 
 ## Side note
 
-If we move `tar.e2e.js` to to the `src` folder then all tests will run as well, e.g.
+If we move `tar.e2e.js` to to the `src` folder (in the second step) then all tests will run as well, e.g.
 
 ```bash
 mv ./src/usecases/tar.e2e.js ./src/tar
