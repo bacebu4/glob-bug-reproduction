@@ -22,7 +22,7 @@ mv ./src/usecases/tar.e2e.js ./src/usecases/far/tar
 
 As a result all test files (`bar.e2e.js`, `tar.e2e.js`, `far.e2e.js`) will be executed
 
-# Expected behavior
+# Expected behaviour
 
 In the step `1.` all tests should be executed (`bar.e2e.js`, `tar.e2e.js`, `far.e2e.js`)
 
