@@ -1,18 +1,14 @@
 # Reproduction of the Glob misbehavior
 
-1. Run the tests using script
+1. Run the tests using script and node version `v20.12.1`
 
 ```bash
 ./test.sh
 ```
 
-Only `src/usecases/tar.e2e.js` will be executed
+No tests are run as a results and
 
-2. Move `src/usecases/tar.e2e.js` to `src/usecases/far/tar/tar.e2e.js`
-
-```bash
-mv ./src/usecases/tar.e2e.js ./src/usecases/far/tar
-```
+2. Switch to version `v21.7.2`
 
 3. Run tests again using script
 
@@ -20,16 +16,4 @@ mv ./src/usecases/tar.e2e.js ./src/usecases/far/tar
 ./test.sh
 ```
 
-As a result all test files (`bar.e2e.js`, `tar.e2e.js`, `far.e2e.js`) will be executed
-
-# Expected behaviour
-
-In the step `1.` all tests should be executed (`bar.e2e.js`, `tar.e2e.js`, `far.e2e.js`)
-
-## Side note
-
-If we move `tar.e2e.js` to to the `src` folder (in the second step) then all tests will run as well, e.g.
-
-```bash
-mv ./src/usecases/tar.e2e.js ./src/tar
-```
+As a result the test file is executed
