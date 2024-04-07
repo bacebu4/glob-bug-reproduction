@@ -1,19 +1,19 @@
 # Reproduction of the Glob misbehavior
 
-1. Run the tests using script and node version `v20.12.1`
+1. Run the tests using script and node version `v21.7.2`
 
 ```bash
 ./test.sh
 ```
 
-No tests are run as a results and
+Only `far.e2e.js` is being run
 
-2. Switch to version `v21.7.2`
+2. Delete `far.e2e.js`
 
-3. Run tests again using script
+3. Run tests again
 
-```bash
-./test.sh
-```
+Now as a result `bar.e2.js` and `tar.e2e.js` are being run.
 
-As a result the test file is executed
+# Expected behavior
+
+All tests are being run without deletion
